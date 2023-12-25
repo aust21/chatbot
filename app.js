@@ -33,13 +33,17 @@ const handleChat = () => {
 
 	// append the message to the chatbox
 	chatbox.appendChild(createChatLi(userMessage, "outgoing"));
-
-	
 	setTimeout(() => {
 		chatbox.appendChild(createChatLi(".....", "incoming"));
-	}, 600)
+		// chatbox.appendChild(createChatLi("You didn't sing life goes on....😔", "incoming"));
+	}, 1600)
+	
+	setTimeout(() => {
+		// chatbox.appendChild(createChatLi(".....", "incoming"));
+		chatbox.appendChild(createChatLi("You didn't sing life goes on....😔", "incoming"));
+	}, 2600)
 
-	generateResponse()
+	// generateResponse()
 
 }
 counter = 0;
