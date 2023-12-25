@@ -8,29 +8,84 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-	<div class="show-chatbot">
-		<button class="chatbot-toggler">
-		<span class="material-symbols-outlined">mode_comment</span>
-		<span class="material-symbols-outlined">close</span>
-		</button>
-		<div class="chatbot">
-			<header>
-				<h2>Toy Robot</h2>
-				<span class="material-symbols-outlined">close</span>
-			</header>
-			<ul class="chatbox">
-				<li class="chat incoming">
-					<span class="material-symbols-outlined">smart_toy</span>
-					<p>Hey there 👋, I'm Hal<br/>How can I help you today</p>
-				</li>
-				
+	<header>
+		<nav>
+			<h3>Toy RobInator</h3>
+			<ul>
+				<li>Discover</li>
+				<li>Docs</li>
+				<li>Learn More</li>
 			</ul>
-			<div class="chat-input">
-				<textarea placeholder="Enter a message...." required></textarea>
-				<span class="material-symbols-outlined" id="send-btn">send</span>
+		</nav>
+	</header>
+
+
+	<div class="modal">
+		<div class="modal-box">
+			<h5>Confirm you are a robot</h5>
+			<div class="checks">
+				<input type="checkbox"><label>I'm not a robot</label>
+			</div>
+			<div class="checks">
+				<input type="checkbox"><label>I'm not a robot, but I'm not judging those who are....</label>
+			</div>
+			<div class="checks">
+				<input type="checkbox"><label>I'm not a robot, but I know who is...</label>
+			</div>
+			<div class="checks">
+				<input type="checkbox"><label>Define a robot</label>
+			</div>
+			<div class="checks">
+				<input type="checkbox"><label>I know the know unknown</label>
+			</div>
+			<div class="checks">
+				<input type="checkbox"><label>I know Optimus Prime's maker....</label>
+			</div>
+			<div class="close-modal">
+				<button type="button" onclick=collaspeModal()>Autobots Rollout..</button>
 			</div>
 		</div>
+		
 	</div>
+	<section>
+		
+		<div class="page">
+			<div class="text-box">
+				<h1>Experience the wonders of Hal</h1>
+				<div class="pain">
+					<p>Hal is a toy robot developed by an individual whose identity is still a known unknown. Something that you know you dont know.
+					Hal is a sensitive program so is the programmer who spent countless days making this experience for you. Do not enter hash commands as Hal is easily scared and will start to spiral out of control. Please enter your commands carefully and slowly while singing Life goes on by Tupac to avoid any accidents.</p>
+				</div>
+			</div>
+			<div class="btns">
+				<button class="btn" type="button" onclick = showModal()>Verify Identity</button>
+			</div>
+		</div>
+		<div id="box">
+			<button class="chatbot-toggler">
+			<span class="material-symbols-outlined">mode_comment</span>
+			<span class="material-symbols-outlined">close</span>
+			</button>
+			<div class="chatbot">
+				<header>
+					<h2>Toy Robot</h2>
+					<span class="material-symbols-outlined">close</span>
+				</header>
+				<ul class="chatbox">
+					<li class="chat incoming">
+						<span class="material-symbols-outlined">smart_toy</span>
+						<p>Hey there 👋, I'm Hal<br/>How can I help you today</p>
+					</li>
+					
+				</ul>
+				<div class="chat-input">
+					<textarea placeholder="Enter a message...." required></textarea>
+					<span class="material-symbols-outlined" id="send-btn">send</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 	<script src="app.js"></script>
 </body>
 </html>
